@@ -178,9 +178,9 @@ from bs4 import BeautifulSoup
 def jp_elements(url: str) -> list[str]:
     """
     Return a list like
-        ["不思議", "種"]
+        ["フシギダネ", "不思議", "種"]
     or for Butterfree:
-        ["butterfly (英語: 蝶)", "free (英語: 自由な)"]
+        ["バタフリー", "butterfly (英語: 蝶)", "free (英語: 自由な)"]
     """
     if not url:
         return []
@@ -214,11 +214,20 @@ def jp_elements(url: str) -> list[str]:
     if not row:
         return []
 
-    origin_cell = row.find_all("td")[2].get_text(strip=True)
+    cells = row.find_all("td")
+    if len(cells) < 4:
+        return []
+
+    # Get Japanese name (column 3) and etymology elements (column 4)
+    japanese_name = cells[2].get_text(strip=True)
+    origin_cell = cells[3].get_text(strip=True)
 
     # split on 、 (primary) or ・ / • (fallback)
     parts = re.split(r"[、・•]", origin_cell)
-    return [p.strip() for p in parts if p.strip()]
+    etymology_elements = [p.strip() for p in parts if p.strip()]
+    
+    # Return both the Japanese name and etymology elements
+    return [japanese_name] + etymology_elements
  
 
 # ------------------ orchestrator -------------
