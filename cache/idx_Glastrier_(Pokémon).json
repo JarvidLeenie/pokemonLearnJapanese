@@ -1,0 +1,350 @@
+{
+  "parse": {
+    "title": "Glastrier (Pokémon)",
+    "pageid": 257885,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 1057,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 4328,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC appearances",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 4431,
+        "anchor": "NPC_appearances",
+        "linkAnchor": "NPC_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 4536,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 5251,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.3.1",
+        "index": "6",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 6750,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Held items",
+        "number": "2.4",
+        "index": "7",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 6773,
+        "anchor": "Held_items",
+        "linkAnchor": "Held_items"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.5",
+        "index": "8",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 6790,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.5.1",
+        "index": "9",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 6802,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.6",
+        "index": "10",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 6907,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.7",
+        "index": "11",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 7170,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.7.1",
+        "index": "12",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 7185,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM",
+        "number": "2.7.2",
+        "index": "13",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 8108,
+        "anchor": "By_TM",
+        "linkAnchor": "By_TM"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.7.3",
+        "index": "14",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 10409,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.8",
+        "index": "15",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 10550,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.9",
+        "index": "16",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 10828,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.10",
+        "index": "17",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 10996,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "18",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11189,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Main series",
+        "number": "3.1",
+        "index": "19",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11206,
+        "anchor": "Main_series",
+        "linkAnchor": "Main_series"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Major appearances",
+        "number": "3.1.1",
+        "index": "20",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11224,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Minor appearances",
+        "number": "3.1.2",
+        "index": "21",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11250,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "22",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11277,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "23",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11295,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Music",
+        "number": "6",
+        "index": "24",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11336,
+        "anchor": "Music",
+        "linkAnchor": "Music"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "7",
+        "index": "25",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 11863,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "7.1",
+        "index": "26",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 12106,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "7.1.1",
+        "index": "27",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 15976,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "8",
+        "index": "28",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 16199,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "9",
+        "index": "29",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 17100,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "References",
+        "number": "10",
+        "index": "30",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 17299,
+        "anchor": "References",
+        "linkAnchor": "References"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "11",
+        "index": "31",
+        "fromtitle": "Glastrier_(Pokémon)",
+        "byteoffset": 17329,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

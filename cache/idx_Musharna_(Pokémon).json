@@ -1,0 +1,383 @@
+{
+  "parse": {
+    "title": "Musharna (Pokémon)",
+    "pageid": 108959,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 948,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 2227,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 2596,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 2610,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 4551,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.2.1",
+        "index": "6",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 6172,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Held items",
+        "number": "2.3",
+        "index": "7",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8032,
+        "anchor": "Held_items",
+        "linkAnchor": "Held_items"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8050,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.4.1",
+        "index": "9",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8062,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.5",
+        "index": "10",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8172,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.6",
+        "index": "11",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8437,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.6.1",
+        "index": "12",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 8505,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM/TR",
+        "number": "2.6.2",
+        "index": "13",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 9585,
+        "anchor": "By_TM/TR",
+        "linkAnchor": "By_TM/TR"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.6.3",
+        "index": "14",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 11963,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By tutoring",
+        "number": "2.6.4",
+        "index": "15",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 12324,
+        "anchor": "By_tutoring",
+        "linkAnchor": "By_tutoring"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By a prior Evolution",
+        "number": "2.6.5",
+        "index": "16",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 12605,
+        "anchor": "By_a_prior_Evolution",
+        "linkAnchor": "By_a_prior_Evolution"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By transfer from another generation",
+        "number": "2.6.6",
+        "index": "17",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 12764,
+        "anchor": "By_transfer_from_another_generation",
+        "linkAnchor": "By_transfer_from_another_generation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.7",
+        "index": "18",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 16199,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.8",
+        "index": "19",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 18217,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.9",
+        "index": "20",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 18422,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "21",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 18715,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Major appearances",
+        "number": "3.1",
+        "index": "22",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 18802,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Minor appearances",
+        "number": "3.2",
+        "index": "23",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 19368,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "3.3",
+        "index": "24",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 19630,
+        "anchor": "Pokédex_entries_2",
+        "linkAnchor": "Pokédex_entries_2"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "25",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 19928,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.1",
+        "index": "26",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 20017,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "27",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 20170,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "28",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 20210,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "29",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 20791,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "30",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 21469,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "31",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 21682,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "8",
+        "index": "32",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 22813,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "References",
+        "number": "9",
+        "index": "33",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 22847,
+        "anchor": "References",
+        "linkAnchor": "References"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "10",
+        "index": "34",
+        "fromtitle": "Musharna_(Pokémon)",
+        "byteoffset": 22878,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

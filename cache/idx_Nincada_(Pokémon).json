@@ -1,0 +1,383 @@
+{
+  "parse": {
+    "title": "Nincada (Pokémon)",
+    "pageid": 2655,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 1167,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 2060,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 2630,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 2644,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 5732,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.2.1",
+        "index": "6",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 8109,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Held items",
+        "number": "2.3",
+        "index": "7",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 10626,
+        "anchor": "Held_items",
+        "linkAnchor": "Held_items"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11019,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.4.1",
+        "index": "9",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11031,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Pokéathlon stats",
+        "number": "2.4.2",
+        "index": "10",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11161,
+        "anchor": "Pokéathlon_stats",
+        "linkAnchor": "Pokéathlon_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.5",
+        "index": "11",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11341,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.6",
+        "index": "12",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11704,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.6.1",
+        "index": "13",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 11820,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM/TR",
+        "number": "2.6.2",
+        "index": "14",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 12523,
+        "anchor": "By_TM/TR",
+        "linkAnchor": "By_TM/TR"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.6.3",
+        "index": "15",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 15020,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By tutoring",
+        "number": "2.6.4",
+        "index": "16",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 17686,
+        "anchor": "By_tutoring",
+        "linkAnchor": "By_tutoring"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By transfer from another generation",
+        "number": "2.6.5",
+        "index": "17",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 17879,
+        "anchor": "By_transfer_from_another_generation",
+        "linkAnchor": "By_transfer_from_another_generation"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "TCG-only moves",
+        "number": "2.6.6",
+        "index": "18",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 20749,
+        "anchor": "TCG-only_moves",
+        "linkAnchor": "TCG-only_moves"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.7",
+        "index": "19",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 21195,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.8",
+        "index": "20",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 22831,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.9",
+        "index": "21",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 23599,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "22",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 23949,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Major appearances",
+        "number": "3.1",
+        "index": "23",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 24038,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Minor appearances",
+        "number": "3.2",
+        "index": "24",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 24256,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "3.3",
+        "index": "25",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 24714,
+        "anchor": "Pokédex_entries_2",
+        "linkAnchor": "Pokédex_entries_2"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "26",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 25264,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Ash &amp; Pikachu",
+        "number": "4.1",
+        "index": "27",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 25366,
+        "anchor": "Ash_&_Pikachu",
+        "linkAnchor": "Ash_&_Pikachu"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.2",
+        "index": "28",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 25531,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "29",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 25780,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "30",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 25819,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "31",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 26727,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "32",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 27280,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "33",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 27475,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "8",
+        "index": "34",
+        "fromtitle": "Nincada_(Pokémon)",
+        "byteoffset": 28515,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

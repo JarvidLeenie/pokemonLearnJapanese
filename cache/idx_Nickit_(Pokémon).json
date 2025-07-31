@@ -1,0 +1,372 @@
+{
+  "parse": {
+    "title": "Nickit (Pokémon)",
+    "pageid": 244042,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 879,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 1754,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 2116,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 2130,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 2873,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.3",
+        "index": "6",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 3685,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.3.1",
+        "index": "7",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 3697,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 3799,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.5",
+        "index": "9",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 4095,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.5.1",
+        "index": "10",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 4110,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM/TR",
+        "number": "2.5.2",
+        "index": "11",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 4884,
+        "anchor": "By_TM/TR",
+        "linkAnchor": "By_TM/TR"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.5.3",
+        "index": "12",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 6353,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By tutoring",
+        "number": "2.5.4",
+        "index": "13",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 7507,
+        "anchor": "By_tutoring",
+        "linkAnchor": "By_tutoring"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.6",
+        "index": "14",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 7692,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.7",
+        "index": "15",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8010,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.8",
+        "index": "16",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8210,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "17",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8408,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Main series",
+        "number": "3.1",
+        "index": "18",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8425,
+        "anchor": "Main_series",
+        "linkAnchor": "Main_series"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Major appearances",
+        "number": "3.1.1",
+        "index": "19",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8508,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 4,
+        "level": "5",
+        "line": "Nickit trio",
+        "number": "3.1.1.1",
+        "index": "20",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 8534,
+        "anchor": "Nickit_trio",
+        "linkAnchor": "Nickit_trio"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Minor appearances",
+        "number": "3.1.2",
+        "index": "21",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9104,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Pokédex entries",
+        "number": "3.1.3",
+        "index": "22",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9131,
+        "anchor": "Pokédex_entries_2",
+        "linkAnchor": "Pokédex_entries_2"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon: Twilight Wings",
+        "number": "3.2",
+        "index": "23",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9434,
+        "anchor": "Pokémon:_Twilight_Wings",
+        "linkAnchor": "Pokémon:_Twilight_Wings"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "24",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9523,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.1",
+        "index": "25",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9635,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Journeys",
+        "number": "4.2",
+        "index": "26",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9768,
+        "anchor": "Pokémon_Journeys",
+        "linkAnchor": "Pokémon_Journeys"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "27",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9911,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "28",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 9948,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "29",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 10388,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "30",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 10853,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "31",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 11087,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "8",
+        "index": "32",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 12262,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "9",
+        "index": "33",
+        "fromtitle": "Nickit_(Pokémon)",
+        "byteoffset": 12340,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

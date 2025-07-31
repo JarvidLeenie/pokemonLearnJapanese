@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.4in;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
 }
 
 .sheet {
@@ -30,13 +32,100 @@ body {
 .card {
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 0.15in;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 0.1in;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card type-specific styling */
+.card[data-tcg-type="Grass"] {
+  background: linear-gradient(145deg, #19A648 0%, #0d5a2a 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Fire"] {
+  background: linear-gradient(145deg, #D8223B 0%, #8a1626 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Water"] {
+  background: linear-gradient(145deg, #05A8D9 0%, #036b8a 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Lightning"] {
+  background: linear-gradient(145deg, #FCD021 0%, #b8940f 100%);
+  color: #333;
+}
+
+.card[data-tcg-type="Fighting"] {
+  background: linear-gradient(145deg, #B16232 0%, #7a421f 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Psychic"] {
+  background: linear-gradient(145deg, #957DAB 0%, #5d4e6c 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Colorless"] {
+  background: linear-gradient(145deg, #D2D0CF 0%, #a8a6a5 100%);
+  color: #333;
+}
+
+.card[data-tcg-type="Darkness"] {
+  background: linear-gradient(145deg, #2E7077 0%, #1e4a4e 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Metal"] {
+  background: linear-gradient(145deg, #9B9E8C 0%, #6b6e5f 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Dragon"] {
+  background: linear-gradient(145deg, #948F31 0%, #5f5b20 100%);
+  color: white;
+}
+
+.card[data-tcg-type="Fairy"] {
+  background: linear-gradient(145deg, #D6457E 0%, #8a2d51 100%);
+  color: white;
+}
+
+/* Card header with type icon */
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1in;
+  padding: 0.05in;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+}
+
+.type-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-icon img {
+  width: 16px;
+  height: 16px;
 }
 
 .spacer {
@@ -46,89 +135,99 @@ body {
 
 .title {
   font-weight: 700;
-  font-size: 1.05em;
+  font-size: 1.1em;
   text-align: center;
   display: flex;
   align-items: center;
   gap: 0.1em;
+  margin: 0.05in 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .subtitle {
-  font-size: 0.85em;
-  color: #555;
+  font-size: 0.8em;
   text-align: center;
-  margin-top: -0.35em;
+  margin-top: -0.2em;
+  opacity: 0.9;
 }
 
 .line {
   width: 100%;
-  border-top: 1px solid #000;
-  margin: 0.15em 0;
+  border-top: 2px solid rgba(255,255,255,0.3);
+  margin: 0.1em 0;
 }
 
 .section {
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.8em;
   text-align: center;
   width: 100%;
-  border-top: 1px solid #888;
-  border-bottom: 1px solid #888;
-  padding: 0.15em 0;
-  margin: 0.25em 0 0.15em;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 0.1em 0;
+  margin: 0.15em 0 0.1em;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
 }
 
 .content {
-  font-size: 0.75em;
-  line-height: 1.3;
+  font-size: 0.7em;
+  line-height: 1.4;
   width: 100%;
+  flex-grow: 1;
 }
 
 .content p {
-  margin: 0.15em 0;
+  margin: 0.1em 0;
   display: flex;
   align-items: center;
   gap: 0.1em;
 }
 
 .speak-btn {
-  background: none;
-  border: none;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 2px 4px;
   border-radius: 3px;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
   margin-left: 0.1em;
+  color: inherit;
 }
 
 .speak-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.05);
 }
 
 .speak-btn:active {
-  background-color: rgba(0, 0, 0, 0.2);
+  background: rgba(255,255,255,0.4);
+  transform: scale(0.95);
 }
 
 .image-box {
-  height: 1.5in;
+  height: 1.2in;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0.1em 0;
 }
 
 .frame {
-  border: 1px solid #ccc;
+  border: 2px solid rgba(255,255,255,0.3);
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
-  padding: 6px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  padding: 4px;
 }
 
 .frame img {
-  max-width: 70px;
+  max-width: 60px;
   height: auto;
   display: block;
+  border-radius: 4px;
 }
 
 #pager {
@@ -138,27 +237,39 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
+  background: rgba(255,255,255,0.1);
+  padding: 0.2in;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
 }
 
 #pager button {
-  background: #eee;
-  border: 1px solid #888;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 4px;
   padding: 4px 10px;
   min-width: 36px;
   font-size: 0.9em;
   cursor: pointer;
+  color: white;
+  transition: all 0.2s;
 }
 
 #pager button.active {
-  background: #444;
-  color: #fff;
-  border-color: #444;
+  background: rgba(255,255,255,0.4);
+  color: #333;
+  border-color: rgba(255,255,255,0.6);
+}
+
+#pager button:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-1px);
 }
 
 #pager button:disabled {
   opacity: 0.4;
   cursor: default;
+  transform: none;
 }
 
 @media print {
@@ -172,6 +283,7 @@ body {
   
   body {
     gap: 0;
+    background: white;
   }
   
   .sheet {
@@ -193,6 +305,7 @@ body {
     height: 3.5in !important;
     page-break-inside: avoid;
     margin: 0 !important;
+    box-shadow: none !important;
   }
   
   .spacer {

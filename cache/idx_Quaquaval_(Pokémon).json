@@ -1,0 +1,350 @@
+{
+  "parse": {
+    "title": "Quaquaval (Pokémon)",
+    "pageid": 277432,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 1033,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 3427,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 3905,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 3919,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 4838,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.2.1",
+        "index": "6",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 5079,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In events",
+        "number": "2.2.2",
+        "index": "7",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 5591,
+        "anchor": "In_events",
+        "linkAnchor": "In_events"
+      },
+      {
+        "toclevel": 4,
+        "level": "5",
+        "line": "Poké Portal News",
+        "number": "2.2.2.1",
+        "index": "8",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 5609,
+        "anchor": "Poké_Portal_News",
+        "linkAnchor": "Poké_Portal_News"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.3",
+        "index": "9",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 5871,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.3.1",
+        "index": "10",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 5883,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.4",
+        "index": "11",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 6003,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.5",
+        "index": "12",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 6278,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.5.1",
+        "index": "13",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 6293,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM",
+        "number": "2.5.2",
+        "index": "14",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 7730,
+        "anchor": "By_TM",
+        "linkAnchor": "By_TM"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.5.3",
+        "index": "15",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 10921,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By a prior Evolution",
+        "number": "2.5.4",
+        "index": "16",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 11925,
+        "anchor": "By_a_prior_Evolution",
+        "linkAnchor": "By_a_prior_Evolution"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.6",
+        "index": "17",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 12084,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.7",
+        "index": "18",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 13182,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.8",
+        "index": "19",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 13513,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "20",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 13696,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon: Paldean Winds",
+        "number": "3.1",
+        "index": "21",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 13790,
+        "anchor": "Pokémon:_Paldean_Winds",
+        "linkAnchor": "Pokémon:_Paldean_Winds"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "POKETOON",
+        "number": "3.2",
+        "index": "22",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 14019,
+        "anchor": "POKETOON",
+        "linkAnchor": "POKETOON"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "23",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 14121,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "24",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 14138,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "25",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 14178,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "26",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 14190,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "27",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 16043,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "28",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 16513,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "8",
+        "index": "29",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 17513,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "References",
+        "number": "9",
+        "index": "30",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 17535,
+        "anchor": "References",
+        "linkAnchor": "References"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "10",
+        "index": "31",
+        "fromtitle": "Quaquaval_(Pokémon)",
+        "byteoffset": 17565,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

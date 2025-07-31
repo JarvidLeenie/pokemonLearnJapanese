@@ -1,0 +1,372 @@
+{
+  "parse": {
+    "title": "Skiddo (Pokémon)",
+    "pageid": 181564,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 875,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 1973,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 2336,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC appearances",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 2351,
+        "anchor": "NPC_appearances",
+        "linkAnchor": "NPC_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 2477,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.3",
+        "index": "6",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 4168,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.3.1",
+        "index": "7",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 5599,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 6421,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.4.1",
+        "index": "9",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 6433,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.5",
+        "index": "10",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 6551,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.6",
+        "index": "11",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 6841,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.6.1",
+        "index": "12",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 6856,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM",
+        "number": "2.6.2",
+        "index": "13",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 7864,
+        "anchor": "By_TM",
+        "linkAnchor": "By_TM"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.6.3",
+        "index": "14",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 10218,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.7",
+        "index": "15",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 11625,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.8",
+        "index": "16",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 12466,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.9",
+        "index": "17",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 12668,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "18",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 12932,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Main series",
+        "number": "3.1",
+        "index": "19",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 13014,
+        "anchor": "Main_series",
+        "linkAnchor": "Main_series"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Major appearances",
+        "number": "3.1.1",
+        "index": "20",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 13032,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Minor appearances",
+        "number": "3.1.2",
+        "index": "21",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 13548,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Pokédex entries",
+        "number": "3.1.3",
+        "index": "22",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15067,
+        "anchor": "Pokédex_entries_2",
+        "linkAnchor": "Pokédex_entries_2"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Evolutions",
+        "number": "3.2",
+        "index": "23",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15338,
+        "anchor": "Pokémon_Evolutions",
+        "linkAnchor": "Pokémon_Evolutions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "24",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15453,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Movie adaptations",
+        "number": "4.1",
+        "index": "25",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15546,
+        "anchor": "Movie_adaptations",
+        "linkAnchor": "Movie_adaptations"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Journeys",
+        "number": "4.2",
+        "index": "26",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15749,
+        "anchor": "Pokémon_Journeys",
+        "linkAnchor": "Pokémon_Journeys"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.3",
+        "index": "27",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 15844,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "28",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 16456,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "29",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 16494,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "30",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 16625,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "31",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 17110,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "32",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 17471,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "8",
+        "index": "33",
+        "fromtitle": "Skiddo_(Pokémon)",
+        "byteoffset": 18852,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "TCG type": {
+    "name": "TCG type",
+    "color": "#bebed1",
+    "icon_url": null
+  },
+  "Grass": {
+    "name": "Grass",
+    "color": "#19A648",
+    "icon_url": "images/20px-Grass-attack.png"
+  },
+  "Fire": {
+    "name": "Fire",
+    "color": "#D8223B",
+    "icon_url": "images/20px-Fire-attack.png"
+  },
+  "Water": {
+    "name": "Water",
+    "color": "#05A8D9",
+    "icon_url": "images/20px-Water-attack.png"
+  },
+  "Lightning": {
+    "name": "Lightning",
+    "color": "#FCD021",
+    "icon_url": "images/20px-Lightning-attack.png"
+  },
+  "Fighting": {
+    "name": "Fighting",
+    "color": "#B16232",
+    "icon_url": "images/20px-Fighting-attack.png"
+  },
+  "Psychic": {
+    "name": "Psychic",
+    "color": "#957DAB",
+    "icon_url": "images/20px-Psychic-attack.png"
+  },
+  "Colorless": {
+    "name": "Colorless",
+    "color": "#D2D0CF",
+    "icon_url": "images/20px-Colorless-attack.png"
+  },
+  "Darkness": {
+    "name": "Darkness",
+    "color": "#2E7077",
+    "icon_url": "images/20px-Darkness-attack.png"
+  },
+  "Metal": {
+    "name": "Metal",
+    "color": "#9B9E8C",
+    "icon_url": "images/20px-Metal-attack.png"
+  },
+  "Dragon": {
+    "name": "Dragon",
+    "color": "#948F31",
+    "icon_url": "images/20px-Dragon-attack.png"
+  },
+  "Fairy": {
+    "name": "Fairy",
+    "color": "#D6457E",
+    "icon_url": "images/20px-Fairy-attack.png"
+  }
+}

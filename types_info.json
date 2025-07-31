@@ -1,0 +1,77 @@
+{
+  "Normal": {
+    "name": "Normal",
+    "color": "#9FA19F",
+    "icon_url": "images/20px-Normal_icon.png"
+  },
+  "Fire": {
+    "name": "Fire",
+    "color": "#E62829",
+    "icon_url": "images/20px-Fire_icon.png"
+  },
+  "Water": {
+    "name": "Water",
+    "color": "#2980EF",
+    "icon_url": "images/20px-Water_icon.png"
+  },
+  "Grass": {
+    "name": "Grass",
+    "color": "#3FA129",
+    "icon_url": "images/20px-Grass_icon.png"
+  },
+  "Ice": {
+    "name": "Ice",
+    "color": "#3DCEF3",
+    "icon_url": "images/20px-Ice_icon.png"
+  },
+  "Fighting": {
+    "name": "Fighting",
+    "color": "#FF8000",
+    "icon_url": "images/20px-Fighting_icon.png"
+  },
+  "Poison": {
+    "name": "Poison",
+    "color": "#9141CB",
+    "icon_url": "images/20px-Poison_icon.png"
+  },
+  "Ground": {
+    "name": "Ground",
+    "color": "#915121",
+    "icon_url": "images/20px-Ground_icon.png"
+  },
+  "Flying": {
+    "name": "Flying",
+    "color": "#81B9EF",
+    "icon_url": "images/20px-Flying_icon.png"
+  },
+  "Psychic": {
+    "name": "Psychic",
+    "color": "#EF4179",
+    "icon_url": "images/20px-Psychic_icon.png"
+  },
+  "Bug": {
+    "name": "Bug",
+    "color": "#91A119",
+    "icon_url": "images/20px-Bug_icon.png"
+  },
+  "Rock": {
+    "name": "Rock",
+    "color": "#AFA981",
+    "icon_url": "images/20px-Rock_icon.png"
+  },
+  "Ghost": {
+    "name": "Ghost",
+    "color": "#704170",
+    "icon_url": "images/20px-Ghost_icon.png"
+  },
+  "Steel": {
+    "name": "Steel",
+    "color": "#60A1B8",
+    "icon_url": "images/20px-Steel_icon.png"
+  },
+  "Fairy": {
+    "name": "Fairy",
+    "color": "#EF70EF",
+    "icon_url": "images/20px-Fairy_icon.png"
+  }
+}

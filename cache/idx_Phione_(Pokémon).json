@@ -1,0 +1,350 @@
+{
+  "parse": {
+    "title": "Phione (Pokémon)",
+    "pageid": 13599,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 1016,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 2364,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC appearances",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 2378,
+        "anchor": "NPC_appearances",
+        "linkAnchor": "NPC_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 2681,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 4887,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.3.1",
+        "index": "6",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 6710,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.4",
+        "index": "7",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 8779,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.4.1",
+        "index": "8",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 8791,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Pokéathlon stats",
+        "number": "2.4.2",
+        "index": "9",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 8909,
+        "anchor": "Pokéathlon_stats",
+        "linkAnchor": "Pokéathlon_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.5",
+        "index": "10",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 9077,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.6",
+        "index": "11",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 9390,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.6.1",
+        "index": "12",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 9405,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM",
+        "number": "2.6.2",
+        "index": "13",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 10181,
+        "anchor": "By_TM",
+        "linkAnchor": "By_TM"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.6.3",
+        "index": "14",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 12356,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.7",
+        "index": "15",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 12499,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.8",
+        "index": "16",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 13903,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.9",
+        "index": "17",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 14013,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "18",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 14332,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Major appearances",
+        "number": "3.1",
+        "index": "19",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 14414,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Minor appearances",
+        "number": "3.2",
+        "index": "20",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 14741,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "3.3",
+        "index": "21",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 14772,
+        "anchor": "Pokédex_entries_2",
+        "linkAnchor": "Pokédex_entries_2"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "22",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 15067,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.1",
+        "index": "23",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 15260,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "24",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 15622,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "25",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 15660,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Mythical status",
+        "number": "6.1",
+        "index": "26",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 16152,
+        "anchor": "Mythical_status",
+        "linkAnchor": "Mythical_status"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.2",
+        "index": "27",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 18203,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.2.1",
+        "index": "28",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 19097,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "29",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 19222,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "8",
+        "index": "30",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 20065,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "9",
+        "index": "31",
+        "fromtitle": "Phione_(Pokémon)",
+        "byteoffset": 20162,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

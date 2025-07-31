@@ -1,6 +1,7 @@
 // Load the JSON data
 let pokemonData = [];
 let originsData = {};
+let tcgTypesData = {};
 
 // Function to add furigana readings to kanji
 function addFurigana(text) {
@@ -382,18 +383,22 @@ function showTTSNotAvailable() {
 // Function to load JSON files
 async function loadData() {
     try {
-        const [pokemonResponse, originsResponse] = await Promise.all([
-            fetch('pokemon_base_0001_1025_with_hiragana.json'),
-            fetch('name_origins_0001_1025.json')
+        const [pokemonResponse, originsResponse, tcgTypesResponse] = await Promise.all([
+            fetch('pokemon_base_0001_1025_with_tcg_types.json'),
+            fetch('name_origins_0001_1025_cleaned.json'),
+            fetch('tcg_types_info.json')
         ]);
         
         pokemonData = await pokemonResponse.json();
         originsData = await originsResponse.json();
+        tcgTypesData = await tcgTypesResponse.json();
         
         // Transform data to match the expected format
         const cards = pokemonData.map(pokemon => {
             const origin = originsData[pokemon.ndex] || {};
             const elements = origin.nameOriginElements || [];
+            const tcgType = pokemon.tcg_type || 'Colorless';
+            const tcgTypeInfo = tcgTypesData[tcgType] || tcgTypesData['Colorless'];
             
             return {
                 id: pokemon.ndex,
@@ -405,7 +410,9 @@ async function loadData() {
                 img: pokemon.imageUrl,
                 jp: elements.slice(1), // Skip the first element (Japanese name)
                 en: [], // We'll leave this empty for now
-                desc: origin.nameOriginDescription || ""
+                desc: origin.nameOriginDescription || "",
+                tcgType: tcgType,
+                tcgTypeIcon: tcgTypeInfo?.icon_url || null
             };
         });
         
@@ -418,9 +425,9 @@ async function loadData() {
     }
 }
 
-const jpFace = c => `<div class='card'><div class='title'>${c.kana}<button class='speak-btn' onclick='speakText("${c.kana}", "ja-JP")' title='Speak'>🔊</button></div><div class='subtitle'>(${c.hiragana})<button class='speak-btn' onclick='speakText("${c.hiragana}", "ja-JP")' title='Speak'>🔊</button></div><div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.kana}'/></div></div><div class='section'>日本語で名前の意味</div><div class='content'>${c.jp.map(t=>`<p>・${t}</p>`).join('')}</div></div>`;
+const jpFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='title'>${c.kana}<button class='speak-btn' onclick='speakText("${c.kana}", "ja-JP")' title='Speak'>🔊</button></div><div class='subtitle'>(${c.hiragana})<button class='speak-btn' onclick='speakText("${c.hiragana}", "ja-JP")' title='Speak'>🔊</button></div><div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.kana}'/></div></div><div class='section'>日本語で名前の意味</div><div class='content'>${c.jp.map(t=>`<p>・${t}</p>`).join('')}</div></div>`;
 
-const enFace = c => `<div class='card'><div class='title'>${c.pub}</div>${c.hep!==c.pub?`<div class='subtitle'>(${c.hep})</div>`:''}<div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.pub}'/></div></div><div class='section'>Name Origin</div><div class='content'>${c.en.map(t=>`<p>・${t}</p>`).join('')}<p style='margin-top:6px'>${c.desc}</p><p style='margin-top:6px'><strong>English:</strong> ${c.english}</p></div></div>`;
+const enFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='title'>${c.pub}</div>${c.hep!==c.pub?`<div class='subtitle'>(${c.hep})</div>`:''}<div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.pub}'/></div></div><div class='section'>Name Origin</div><div class='content'>${c.en.map(t=>`<p>・${t}</p>`).join('')}<p style='margin-top:6px'>${c.desc}</p><p style='margin-top:6px'><strong>English:</strong> ${c.english}</p></div></div>`;
 
 function buildSheets(cards) {
     const container = document.getElementById('sheets');

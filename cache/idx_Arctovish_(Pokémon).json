@@ -1,0 +1,328 @@
+{
+  "parse": {
+    "title": "Arctovish (Pokémon)",
+    "pageid": 244086,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 1122,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 2103,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 2117,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 2847,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 3610,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.3.1",
+        "index": "6",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 3622,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.4",
+        "index": "7",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 3737,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.5",
+        "index": "8",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 4042,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.5.1",
+        "index": "9",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 4057,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM/TR",
+        "number": "2.5.2",
+        "index": "10",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 4950,
+        "anchor": "By_TM/TR",
+        "linkAnchor": "By_TM/TR"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.5.3",
+        "index": "11",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 7051,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By tutoring",
+        "number": "2.5.4",
+        "index": "12",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 7196,
+        "anchor": "By_tutoring",
+        "linkAnchor": "By_tutoring"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.6",
+        "index": "13",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 7387,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.7",
+        "index": "14",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 7683,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.8",
+        "index": "15",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 7879,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "16",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8091,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Main series",
+        "number": "3.1",
+        "index": "17",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8108,
+        "anchor": "Main_series",
+        "linkAnchor": "Main_series"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Major appearances",
+        "number": "3.1.1",
+        "index": "18",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8197,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Minor appearances",
+        "number": "3.1.2",
+        "index": "19",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8224,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "20",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8339,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokémon Adventures",
+        "number": "4.1",
+        "index": "21",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8453,
+        "anchor": "Pokémon_Adventures",
+        "linkAnchor": "Pokémon_Adventures"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the TCG",
+        "number": "5",
+        "index": "22",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8566,
+        "anchor": "In_the_TCG",
+        "linkAnchor": "In_the_TCG"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "6",
+        "index": "23",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 8606,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "6.1",
+        "index": "24",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 9237,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "6.1.1",
+        "index": "25",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 10837,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "7",
+        "index": "26",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 11134,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "8",
+        "index": "27",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 12304,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "References",
+        "number": "9",
+        "index": "28",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 12360,
+        "anchor": "References",
+        "linkAnchor": "References"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "10",
+        "index": "29",
+        "fromtitle": "Arctovish_(Pokémon)",
+        "byteoffset": 12390,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}

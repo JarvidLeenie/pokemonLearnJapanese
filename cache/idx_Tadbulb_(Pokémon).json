@@ -1,0 +1,328 @@
+{
+  "parse": {
+    "title": "Tadbulb (Pokémon)",
+    "pageid": 277468,
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Biology",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 942,
+        "anchor": "Biology",
+        "linkAnchor": "Biology"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 1799,
+        "anchor": "Evolution",
+        "linkAnchor": "Evolution"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Game data",
+        "number": "2",
+        "index": "3",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 2179,
+        "anchor": "Game_data",
+        "linkAnchor": "Game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pokédex entries",
+        "number": "2.1",
+        "index": "4",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 2193,
+        "anchor": "Pokédex_entries",
+        "linkAnchor": "Pokédex_entries"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Game locations",
+        "number": "2.2",
+        "index": "5",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3071,
+        "anchor": "Game_locations",
+        "linkAnchor": "Game_locations"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "In side games",
+        "number": "2.2.1",
+        "index": "6",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3819,
+        "anchor": "In_side_games",
+        "linkAnchor": "In_side_games"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Held items",
+        "number": "2.3",
+        "index": "7",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3842,
+        "anchor": "Held_items",
+        "linkAnchor": "Held_items"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Stats",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3859,
+        "anchor": "Stats",
+        "linkAnchor": "Stats"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Base stats",
+        "number": "2.4.1",
+        "index": "9",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3871,
+        "anchor": "Base_stats",
+        "linkAnchor": "Base_stats"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Type effectiveness",
+        "number": "2.5",
+        "index": "10",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 3977,
+        "anchor": "Type_effectiveness",
+        "linkAnchor": "Type_effectiveness"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Learnset",
+        "number": "2.6",
+        "index": "11",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 4243,
+        "anchor": "Learnset",
+        "linkAnchor": "Learnset"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By leveling up",
+        "number": "2.6.1",
+        "index": "12",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 4258,
+        "anchor": "By_leveling_up",
+        "linkAnchor": "By_leveling_up"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By TM",
+        "number": "2.6.2",
+        "index": "13",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 5181,
+        "anchor": "By_TM",
+        "linkAnchor": "By_TM"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "By breeding",
+        "number": "2.6.3",
+        "index": "14",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 7093,
+        "anchor": "By_breeding",
+        "linkAnchor": "By_breeding"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Side game data",
+        "number": "2.7",
+        "index": "15",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8012,
+        "anchor": "Side_game_data",
+        "linkAnchor": "Side_game_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Evolution data",
+        "number": "2.8",
+        "index": "16",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8311,
+        "anchor": "Evolution_data",
+        "linkAnchor": "Evolution_data"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sprites",
+        "number": "2.9",
+        "index": "17",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8528,
+        "anchor": "Sprites",
+        "linkAnchor": "Sprites"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In animation",
+        "number": "3",
+        "index": "18",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8697,
+        "anchor": "In_animation",
+        "linkAnchor": "In_animation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Main series",
+        "number": "3.1",
+        "index": "19",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8781,
+        "anchor": "Main_series",
+        "linkAnchor": "Main_series"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Major appearances",
+        "number": "3.1.1",
+        "index": "20",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8799,
+        "anchor": "Major_appearances",
+        "linkAnchor": "Major_appearances"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Minor appearances",
+        "number": "3.1.2",
+        "index": "21",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 8825,
+        "anchor": "Minor_appearances",
+        "linkAnchor": "Minor_appearances"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In the manga",
+        "number": "4",
+        "index": "22",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 9289,
+        "anchor": "In_the_manga",
+        "linkAnchor": "In_the_manga"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trivia",
+        "number": "5",
+        "index": "23",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 9353,
+        "anchor": "Trivia",
+        "linkAnchor": "Trivia"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Origin",
+        "number": "5.1",
+        "index": "24",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 9715,
+        "anchor": "Origin",
+        "linkAnchor": "Origin"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Name origin",
+        "number": "5.1.1",
+        "index": "25",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 9817,
+        "anchor": "Name_origin",
+        "linkAnchor": "Name_origin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "In other languages",
+        "number": "6",
+        "index": "26",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 10002,
+        "anchor": "In_other_languages",
+        "linkAnchor": "In_other_languages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Related articles",
+        "number": "7",
+        "index": "27",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 11090,
+        "anchor": "Related_articles",
+        "linkAnchor": "Related_articles"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "References",
+        "number": "8",
+        "index": "28",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 11112,
+        "anchor": "References",
+        "linkAnchor": "References"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "External links",
+        "number": "9",
+        "index": "29",
+        "fromtitle": "Tadbulb_(Pokémon)",
+        "byteoffset": 11142,
+        "anchor": "External_links",
+        "linkAnchor": "External_links"
+      }
+    ],
+    "showtoc": true
+  }
+}
