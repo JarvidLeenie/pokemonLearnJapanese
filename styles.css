@@ -2,15 +2,22 @@
 
 body {
   margin: 0;
-  padding: 0.25in;
-  box-sizing: border-box;
+  padding: 0.1in;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   font-family: "Helvetica Neue", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.4in;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  gap: 0.2in;
   min-height: 100vh;
+  /* Ensure background is consistent and doesn't flash */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .sheet {
@@ -186,6 +193,8 @@ body {
     min-height: 80vh; /* Reduced from 100vh to prevent excessive height */
     justify-content: center;
     align-items: center;
+    /* Smooth transitions for visibility changes */
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   }
   
   /* Prevent page refresh on scroll */

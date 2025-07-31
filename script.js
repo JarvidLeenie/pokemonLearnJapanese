@@ -528,109 +528,67 @@ async function loadData() {
             // Make navigateToCard globally accessible for pager integration
             window.navigateToCard = navigateToCard;
             
-            // Scroll event listener for continuous navigation
-            window.addEventListener('scroll', (e) => {
-                console.log('Scroll event triggered');
-                console.log('isScrolling:', isScrolling, 'isNavigating:', isNavigating);
+            // Virtual scrolling with preloading to prevent white flashes
+            let visibleRange = { start: 0, end: 2 }; // Show 3 cards at a time
+            let preloadBuffer = 2; // Preload 2 cards ahead and behind
+            
+            function updateVisibleCards() {
+                const sheets = document.querySelectorAll('.sheet');
+                const viewportCenter = window.pageYOffset + window.innerHeight / 2;
                 
-                if (isScrolling || isNavigating) {
-                    console.log('Skipping scroll - already processing or navigating');
+                // Find which card is currently in the center of viewport
+                let centerCardIndex = 0;
+                for (let i = 0; i < sheets.length; i++) {
+                    const sheet = sheets[i];
+                    const rect = sheet.getBoundingClientRect();
+                    const sheetTop = rect.top + window.pageYOffset;
+                    const sheetBottom = sheetTop + rect.height;
+                    
+                    if (viewportCenter >= sheetTop && viewportCenter <= sheetBottom) {
+                        centerCardIndex = i;
+                        break;
+                    }
+                }
+                
+                // Calculate visible range with preload buffer
+                const start = Math.max(0, centerCardIndex - preloadBuffer);
+                const end = Math.min(sheets.length - 1, centerCardIndex + preloadBuffer);
+                
+                // Only update if the range has changed significantly
+                if (start !== visibleRange.start || end !== visibleRange.end) {
+                    console.log(`Updating visible range from ${visibleRange.start}-${visibleRange.end} to ${start}-${end}`);
+                    
+                    // Hide cards outside the visible range
+                    sheets.forEach((sheet, index) => {
+                        if (index >= start && index <= end) {
+                            sheet.style.display = 'flex';
+                            sheet.style.visibility = 'visible';
+                            sheet.style.opacity = '1';
+                        } else {
+                            // Keep cards in DOM but make them invisible and non-interactive
+                            sheet.style.visibility = 'hidden';
+                            sheet.style.opacity = '0';
+                            sheet.style.pointerEvents = 'none';
+                        }
+                    });
+                    
+                    visibleRange = { start, end };
+                    currentCardIndex = centerCardIndex;
+                }
+            }
+            
+            // Throttled scroll handler for better performance
+            let scrollTimeout;
+            window.addEventListener('scroll', (e) => {
+                // Throttle scroll events to improve performance
+                if (scrollTimeout) {
                     return;
                 }
                 
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const windowHeight = window.innerHeight;
-                const documentHeight = document.documentElement.scrollHeight;
-                const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
-                
-                console.log('Scroll details:', {
-                    scrollTop,
-                    lastScrollTop,
-                    scrollDirection,
-                    windowHeight,
-                    documentHeight,
-                    scrollBottom: scrollTop + windowHeight,
-                    currentCardIndex,
-                    totalCards: cards.length,
-                    totalFaces: cards.length * 2,
-                    hasScrollableContent: documentHeight > windowHeight + 100,
-                    scrollableAmount: documentHeight - windowHeight
-                });
-                
-                // For mobile, detect which sheet is currently in view
-                if (isMobileDevice()) {
-                    const sheets = document.querySelectorAll('.sheet');
-                    const viewportCenter = scrollTop + windowHeight / 2;
-                    
-                    let currentVisibleSheet = 0;
-                    for (let i = 0; i < sheets.length; i++) {
-                        const sheet = sheets[i];
-                        const rect = sheet.getBoundingClientRect();
-                        const sheetTop = rect.top + scrollTop;
-                        const sheetBottom = sheetTop + rect.height;
-                        
-                        if (viewportCenter >= sheetTop && viewportCenter <= sheetBottom) {
-                            currentVisibleSheet = i;
-                            break;
-                        }
-                    }
-                    
-                    // Only navigate if we've moved to a different sheet
-                    if (currentVisibleSheet !== currentCardIndex) {
-                        console.log(`Detected sheet change from ${currentCardIndex} to ${currentVisibleSheet}`);
-                        currentCardIndex = currentVisibleSheet;
-                    }
-                } else {
-                    // Desktop behavior - check if we're at the bottom (scrolling down) or top (scrolling up)
-                    const isAtBottom = scrollTop + windowHeight >= documentHeight - 50; // Reduced threshold
-                    const isAtTop = scrollTop <= 50; // Reduced threshold
-                    
-                    console.log('Position check:', { isAtBottom, isAtTop });
-                    
-                    let navigated = false;
-                    
-                    // Only navigate if there's enough scrollable content (document height > window height + threshold)
-                    const hasScrollableContent = documentHeight > windowHeight + 100;
-                    
-                    if (isAtBottom && scrollDirection === 'down' && currentCardIndex < cards.length * 2 - 1 && hasScrollableContent) { // Adjust for 2 faces per card
-                        console.log('At bottom, navigating to next face:', currentCardIndex + 1);
-                        isScrolling = true;
-                        navigated = true;
-                        navigateToCard(currentCardIndex + 1);
-                        
-                        // Force scroll to top immediately without smooth behavior
-                        window.scrollTo(0, 0);
-                        lastScrollTop = 0;
-                        
-                        // Prevent immediate re-triggering
-                        setTimeout(() => {
-                            console.log('Re-enabling scroll detection');
-                            isScrolling = false;
-                        }, 500);
-                    } else if (isAtTop && scrollDirection === 'up' && currentCardIndex > 0 && hasScrollableContent) {
-                        console.log('At top, navigating to previous face:', currentCardIndex - 1);
-                        isScrolling = true;
-                        navigated = true;
-                        navigateToCard(currentCardIndex - 1);
-                        
-                        // Force scroll to bottom immediately without smooth behavior
-                        window.scrollTo(0, documentHeight - windowHeight);
-                        lastScrollTop = documentHeight - windowHeight;
-                        
-                        // Prevent immediate re-triggering
-                        setTimeout(() => {
-                            console.log('Re-enabling scroll detection');
-                            isScrolling = false;
-                        }, 500);
-                    } else {
-                        console.log('No navigation - not at boundary or at limit or insufficient scrollable content');
-                    }
-                    
-                    // Only update lastScrollTop if we didn't navigate (to prevent confusion)
-                    if (!navigated) {
-                        lastScrollTop = scrollTop;
-                    }
-                }
+                scrollTimeout = setTimeout(() => {
+                    scrollTimeout = null;
+                    updateVisibleCards();
+                }, 16); // ~60fps throttling
             });
             
             // Initialize to first card
@@ -669,6 +627,11 @@ function buildSheets(cards) {
             html += "</section>";
         }
         html += "</div>";
+        
+        // Initialize virtual scrolling after DOM is ready
+        setTimeout(() => {
+            updateVisibleCards();
+        }, 100);
     } else {
         // On desktop, keep the original 4-card layout
         for (let i = 0; i < cards.length; i += 4) {
