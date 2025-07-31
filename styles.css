@@ -25,6 +25,78 @@ body {
   align-content: center;
 }
 
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 0.1in;
+    gap: 0.2in;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .sheet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0.3in;
+  }
+  
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 4.5in;
+    max-width: 3.5in;
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+  
+  .title {
+    font-size: 1em;
+  }
+  
+  .subtitle {
+    font-size: 0.75em;
+  }
+  
+  .content {
+    font-size: 0.65em;
+  }
+  
+  .section {
+    font-size: 0.75em;
+  }
+  
+  .spacer {
+    display: none;
+  }
+  
+  #pager {
+    padding: 0.1in;
+    gap: 0.1in;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #pager button {
+    padding: 6px 8px;
+    font-size: 0.8em;
+    min-width: 32px;
+  }
+  
+  .image-box {
+    height: 1in;
+  }
+  
+  .frame img {
+    max-width: 50px;
+  }
+  
+  .speak-btn {
+    font-size: 0.6em;
+    padding: 1px 3px;
+  }
+}
+
 .hidden {
   display: none;
 }

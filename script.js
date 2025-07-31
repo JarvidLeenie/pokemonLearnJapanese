@@ -419,6 +419,12 @@ async function loadData() {
         // Build the flashcards
         buildSheets(cards);
         buildPager();
+        
+        // Add resize listener for mobile responsiveness
+        window.addEventListener('resize', () => {
+            buildSheets(cards);
+            buildPager();
+        });
     } catch (error) {
         console.error('Error loading data:', error);
         document.body.innerHTML = '<h1>Error loading data</h1><p>Please make sure the JSON files are available.</p>';
@@ -432,15 +438,31 @@ const enFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='
 function buildSheets(cards) {
     const container = document.getElementById('sheets');
     let html = '';
-    for (let i = 0; i < cards.length; i += 4) {
-        const group = cards.slice(i, i + 4);
-        html += "<section class='sheet'>";
-        group.forEach((c, idx) => {
-            html += jpFace(c) + enFace(c);
-            if (idx % 2 === 0 && idx + 1 < group.length) html += "<div class='spacer'></div>";
-        });
-        html += "</section>";
+    
+    // Check if we're on mobile
+    const isMobile = window.innerWidth <= 768;
+    
+    if (isMobile) {
+        // On mobile, create one sheet per card (Japanese and English faces)
+        for (let i = 0; i < cards.length; i++) {
+            const card = cards[i];
+            html += "<section class='sheet'>";
+            html += jpFace(card) + enFace(card);
+            html += "</section>";
+        }
+    } else {
+        // On desktop, keep the original 4-card layout
+        for (let i = 0; i < cards.length; i += 4) {
+            const group = cards.slice(i, i + 4);
+            html += "<section class='sheet'>";
+            group.forEach((c, idx) => {
+                html += jpFace(c) + enFace(c);
+                if (idx % 2 === 0 && idx + 1 < group.length) html += "<div class='spacer'></div>";
+            });
+            html += "</section>";
+        }
     }
+    
     container.innerHTML = html;
 }
 
