@@ -26,10 +26,10 @@ body {
 }
 
 /* Mobile responsive design */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-device-width: 768px) {
   body {
-    padding: 0.1in;
-    gap: 0.2in;
+    padding: 0.05in;
+    gap: 0.1in;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
   
@@ -39,31 +39,32 @@ body {
     width: 100%;
     height: auto;
     gap: 0.3in;
+    padding: 0;
   }
   
   .card {
     width: 100%;
-    height: auto;
-    min-height: 4.5in;
-    max-width: 3.5in;
-    margin: 0 auto;
+    aspect-ratio: 2.5 / 3.5;
+    max-width: none;
+    margin: 0;
     font-size: 0.9em;
+    padding: 0.1in;
   }
   
   .title {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   
   .subtitle {
-    font-size: 0.75em;
+    font-size: 1em;
   }
   
   .content {
-    font-size: 0.65em;
+    font-size: 0.9em;
   }
   
   .section {
-    font-size: 0.75em;
+    font-size: 1em;
   }
   
   .spacer {
@@ -71,8 +72,8 @@ body {
   }
   
   #pager {
-    padding: 0.1in;
-    gap: 0.1in;
+    padding: 0.05in;
+    gap: 0.05in;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -84,16 +85,62 @@ body {
   }
   
   .image-box {
-    height: 1in;
+    height: 1.5in;
   }
   
   .frame img {
-    max-width: 50px;
+    max-width: 80px;
   }
   
   .speak-btn {
-    font-size: 0.6em;
-    padding: 1px 3px;
+    font-size: 0.8em;
+    padding: 2px 4px;
+  }
+  
+  /* Mobile-specific proportional scaling */
+  .card {
+    font-size: 6vw;
+  }
+  
+  .title {
+    font-size: 8vw;
+  }
+  
+  .subtitle {
+    font-size: 6.5vw;
+  }
+  
+  .content {
+    font-size: 5vw;
+  }
+  
+  .section {
+    font-size: 6.5vw;
+  }
+  
+  .image-box {
+    height: 65vw !important;
+  }
+  
+  .frame img {
+    max-width: 55vw !important;
+    width: 55vw !important;
+    height: auto !important;
+  }
+  
+  .type-icon {
+    width: 16vw !important;
+    height: 16vw !important;
+  }
+  
+  .type-icon img {
+    width: 14vw !important;
+    height: 14vw !important;
+  }
+  
+  .speak-btn {
+    font-size: 4.5vw;
+    padding: 1.5vw 3vw;
   }
 }
 
@@ -185,20 +232,20 @@ body {
   background: rgba(255,255,255,0.1);
 }
 
-.type-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.type-icon img {
-  width: 16px;
-  height: 16px;
-}
+  .type-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .type-icon img {
+    width: 20px;
+    height: 20px;
+  }
 
 .spacer {
   width: 100%;

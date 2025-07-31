@@ -3,6 +3,28 @@ let pokemonData = [];
 let originsData = {};
 let tcgTypesData = {};
 
+// Mobile detection function
+function isMobileDevice() {
+    const width = window.innerWidth;
+    const userAgent = navigator.userAgent;
+    const orientation = window.orientation;
+    
+    const isMobile = width <= 768 || 
+                     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent) ||
+                     (orientation !== undefined && orientation !== 0) ||
+                     ('ontouchstart' in window);
+    
+    // Debug logging
+    console.log('Mobile detection:', {
+        width,
+        userAgent: userAgent.substring(0, 50) + '...',
+        orientation,
+        isMobile
+    });
+    
+    return isMobile;
+}
+
 // Function to add furigana readings to kanji
 function addFurigana(text) {
     // Simple kanji to reading mappings for common characters
@@ -425,6 +447,14 @@ async function loadData() {
             buildSheets(cards);
             buildPager();
         });
+        
+        // Add orientation change listener for mobile devices
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+                buildSheets(cards);
+                buildPager();
+            }, 100);
+        });
     } catch (error) {
         console.error('Error loading data:', error);
         document.body.innerHTML = '<h1>Error loading data</h1><p>Please make sure the JSON files are available.</p>';
@@ -439,8 +469,8 @@ function buildSheets(cards) {
     const container = document.getElementById('sheets');
     let html = '';
     
-    // Check if we're on mobile
-    const isMobile = window.innerWidth <= 768;
+    // Check if we're on mobile - use more reliable detection
+    const isMobile = isMobileDevice();
     
     if (isMobile) {
         // On mobile, create one sheet per card (Japanese and English faces)
