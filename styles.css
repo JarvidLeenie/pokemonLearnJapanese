@@ -32,6 +32,11 @@ body {
     gap: 0.1in;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    /* Performance optimizations for mobile */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   
   .sheet {
@@ -43,6 +48,10 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
+    /* Performance optimizations */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
   
   .card {
@@ -53,7 +62,11 @@ body {
     font-size: 0.9em;
     padding: 0.1in;
     height: auto;
-    min-height: auto;
+    /* Remove min-height to prevent stretching */
+    /* Performance optimizations */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
   
   .title {
@@ -76,17 +89,17 @@ body {
     display: none;
   }
   
+  /* Hide pagination on mobile since we use continuous scroll */
   #pager {
-    padding: 0.05in;
-    gap: 0.05in;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
   
-  #pager button {
-    padding: 6px 8px;
-    font-size: 0.8em;
-    min-width: 32px;
+  #pager * {
+    display: none !important;
   }
   
   .image-box {
@@ -162,11 +175,15 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    /* Performance optimizations */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
   
   .mobile-scroll-container .sheet {
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh; /* Reduced from 100vh to prevent excessive height */
     justify-content: center;
     align-items: center;
   }
@@ -179,7 +196,7 @@ body {
   
   /* Ensure single card takes full viewport */
   .sheet {
-    min-height: 100vh;
+    min-height: 80vh; /* Reduced from 100vh */
     justify-content: center;
     align-items: center;
   }
