@@ -1,0 +1,29 @@
+# Cache files
+cache/
+
+# Generated JSON files (optional - uncomment if you don't want to track these)
+# pokemon_base_*.json
+# name_origins_*.json
+# types_info.json
+# tcg_types_info.json
+
+# Downloaded images (optional - uncomment if you don't want to track these)
+# images/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db 
