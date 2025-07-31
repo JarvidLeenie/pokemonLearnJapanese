@@ -455,6 +455,189 @@ async function loadData() {
                 buildPager();
             }, 100);
         });
+        
+        // Add scroll-based navigation for mobile devices
+        console.log('Setting up mobile scroll navigation...');
+        if (isMobileDevice()) {
+            console.log('Mobile device detected, initializing scroll navigation');
+            let currentCardIndex = 0;
+            let isScrolling = false;
+            let lastScrollTop = 0;
+            let isNavigating = false; // Flag to prevent scroll events during navigation
+            
+            // Function to navigate to a specific card
+            function navigateToCard(index) {
+                console.log('navigateToCard called with index:', index);
+                
+                if (index < 0 || index >= cards.length * 2) { // *2 because each card has 2 faces
+                    console.log('Invalid index, returning');
+                    return;
+                }
+                
+                isNavigating = true; // Set flag to prevent scroll events during navigation
+                currentCardIndex = index;
+                const sheets = document.querySelectorAll('.sheet');
+                console.log('Found sheets:', sheets.length);
+                
+                // For mobile, scroll to the target sheet instead of hiding/showing
+                if (isMobileDevice()) {
+                    const targetSheet = sheets[currentCardIndex];
+                    if (targetSheet) {
+                        targetSheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        console.log(`Scrolled to sheet ${currentCardIndex}`);
+                    } else {
+                        console.log('Target sheet not found!');
+                    }
+                } else {
+                    // Desktop behavior - hide all sheets
+                    sheets.forEach((sheet, i) => {
+                        sheet.classList.add('hidden');
+                    });
+                    
+                    // Show the current sheet
+                    if (sheets[currentCardIndex]) {
+                        sheets[currentCardIndex].classList.remove('hidden');
+                        console.log(`Sheet ${currentCardIndex} shown`);
+                    } else {
+                        console.log('Current sheet not found!');
+                    }
+                }
+                
+                // Update pager to reflect current page (for mobile, this is more complex)
+                const pager = document.getElementById('pager');
+                if (pager && !isMobileDevice()) {
+                    const pageButtons = pager.querySelectorAll('button');
+                    pageButtons.forEach((btn, idx) => {
+                        btn.classList.remove('active');
+                        if (idx === Math.floor(currentCardIndex / 2) + 2) { // Convert face index to card index
+                            btn.classList.add('active');
+                        }
+                    });
+                    console.log('Pager updated');
+                }
+                
+                console.log('Navigation complete');
+                
+                // Reset navigation flag after a longer delay to allow scroll events to settle
+                setTimeout(() => {
+                    isNavigating = false;
+                    console.log('Navigation flag reset');
+                }, 200);
+            }
+            
+            // Make navigateToCard globally accessible for pager integration
+            window.navigateToCard = navigateToCard;
+            
+            // Scroll event listener for continuous navigation
+            window.addEventListener('scroll', (e) => {
+                console.log('Scroll event triggered');
+                console.log('isScrolling:', isScrolling, 'isNavigating:', isNavigating);
+                
+                if (isScrolling || isNavigating) {
+                    console.log('Skipping scroll - already processing or navigating');
+                    return;
+                }
+                
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+                
+                console.log('Scroll details:', {
+                    scrollTop,
+                    lastScrollTop,
+                    scrollDirection,
+                    windowHeight,
+                    documentHeight,
+                    scrollBottom: scrollTop + windowHeight,
+                    currentCardIndex,
+                    totalCards: cards.length,
+                    totalFaces: cards.length * 2,
+                    hasScrollableContent: documentHeight > windowHeight + 100,
+                    scrollableAmount: documentHeight - windowHeight
+                });
+                
+                // For mobile, detect which sheet is currently in view
+                if (isMobileDevice()) {
+                    const sheets = document.querySelectorAll('.sheet');
+                    const viewportCenter = scrollTop + windowHeight / 2;
+                    
+                    let currentVisibleSheet = 0;
+                    for (let i = 0; i < sheets.length; i++) {
+                        const sheet = sheets[i];
+                        const rect = sheet.getBoundingClientRect();
+                        const sheetTop = rect.top + scrollTop;
+                        const sheetBottom = sheetTop + rect.height;
+                        
+                        if (viewportCenter >= sheetTop && viewportCenter <= sheetBottom) {
+                            currentVisibleSheet = i;
+                            break;
+                        }
+                    }
+                    
+                    // Only navigate if we've moved to a different sheet
+                    if (currentVisibleSheet !== currentCardIndex) {
+                        console.log(`Detected sheet change from ${currentCardIndex} to ${currentVisibleSheet}`);
+                        currentCardIndex = currentVisibleSheet;
+                    }
+                } else {
+                    // Desktop behavior - check if we're at the bottom (scrolling down) or top (scrolling up)
+                    const isAtBottom = scrollTop + windowHeight >= documentHeight - 50; // Reduced threshold
+                    const isAtTop = scrollTop <= 50; // Reduced threshold
+                    
+                    console.log('Position check:', { isAtBottom, isAtTop });
+                    
+                    let navigated = false;
+                    
+                    // Only navigate if there's enough scrollable content (document height > window height + threshold)
+                    const hasScrollableContent = documentHeight > windowHeight + 100;
+                    
+                    if (isAtBottom && scrollDirection === 'down' && currentCardIndex < cards.length * 2 - 1 && hasScrollableContent) { // Adjust for 2 faces per card
+                        console.log('At bottom, navigating to next face:', currentCardIndex + 1);
+                        isScrolling = true;
+                        navigated = true;
+                        navigateToCard(currentCardIndex + 1);
+                        
+                        // Force scroll to top immediately without smooth behavior
+                        window.scrollTo(0, 0);
+                        lastScrollTop = 0;
+                        
+                        // Prevent immediate re-triggering
+                        setTimeout(() => {
+                            console.log('Re-enabling scroll detection');
+                            isScrolling = false;
+                        }, 500);
+                    } else if (isAtTop && scrollDirection === 'up' && currentCardIndex > 0 && hasScrollableContent) {
+                        console.log('At top, navigating to previous face:', currentCardIndex - 1);
+                        isScrolling = true;
+                        navigated = true;
+                        navigateToCard(currentCardIndex - 1);
+                        
+                        // Force scroll to bottom immediately without smooth behavior
+                        window.scrollTo(0, documentHeight - windowHeight);
+                        lastScrollTop = documentHeight - windowHeight;
+                        
+                        // Prevent immediate re-triggering
+                        setTimeout(() => {
+                            console.log('Re-enabling scroll detection');
+                            isScrolling = false;
+                        }, 500);
+                    } else {
+                        console.log('No navigation - not at boundary or at limit or insufficient scrollable content');
+                    }
+                    
+                    // Only update lastScrollTop if we didn't navigate (to prevent confusion)
+                    if (!navigated) {
+                        lastScrollTop = scrollTop;
+                    }
+                }
+            });
+            
+            // Initialize to first card
+            console.log('Initializing to first card');
+            navigateToCard(0);
+            console.log('Mobile scroll navigation setup complete');
+        }
     } catch (error) {
         console.error('Error loading data:', error);
         document.body.innerHTML = '<h1>Error loading data</h1><p>Please make sure the JSON files are available.</p>';
@@ -473,13 +656,19 @@ function buildSheets(cards) {
     const isMobile = isMobileDevice();
     
     if (isMobile) {
-        // On mobile, create one sheet per card (Japanese and English faces)
+        // On mobile, create a single long scrollable container with all card faces
+        html += "<div class='mobile-scroll-container'>";
         for (let i = 0; i < cards.length; i++) {
             const card = cards[i];
-            html += "<section class='sheet'>";
-            html += jpFace(card) + enFace(card);
+            // Create separate sections for Japanese and English faces
+            html += "<section class='sheet card-face'>";
+            html += jpFace(card);
+            html += "</section>";
+            html += "<section class='sheet card-face'>";
+            html += enFace(card);
             html += "</section>";
         }
+        html += "</div>";
     } else {
         // On desktop, keep the original 4-card layout
         for (let i = 0; i < cards.length; i += 4) {
@@ -564,6 +753,16 @@ function buildPager() {
             else if (e.target.id === 'prev') current = Math.max(0, current - 1);
             else if (e.target.id === 'next') current = Math.min(totalPages - 1, current + 1);
             else if (e.target.id === 'last') current = totalPages - 1;
+        }
+        
+        // For mobile, also update the scroll navigation
+        if (isMobileDevice()) {
+            // Convert page index to face index (each page has 2 faces)
+            const faceIndex = current * 2;
+            // Find the global navigateToCard function and call it
+            if (window.navigateToCard) {
+                window.navigateToCard(faceIndex);
+            }
         }
         
         render();
