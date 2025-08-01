@@ -3,8 +3,17 @@ let pokemonData = [];
 let originsData = {};
 let tcgTypesData = {};
 
-// Mobile detection function
+// Global variables for mobile navigation
+let navigateToCard = null;
+
+// Mobile detection function - cached to prevent excessive calls
+let mobileDetectionCache = null;
 function isMobileDevice() {
+    // Return cached result if available
+    if (mobileDetectionCache !== null) {
+        return mobileDetectionCache;
+    }
+    
     const width = window.innerWidth;
     const userAgent = navigator.userAgent;
     const orientation = window.orientation;
@@ -14,7 +23,10 @@ function isMobileDevice() {
                      (orientation !== undefined && orientation !== 0) ||
                      ('ontouchstart' in window);
     
-    // Debug logging
+    // Cache the result
+    mobileDetectionCache = isMobile;
+    
+    // Debug logging (only once)
     console.log('Mobile detection:', {
         width,
         userAgent: userAgent.substring(0, 50) + '...',
@@ -24,6 +36,11 @@ function isMobileDevice() {
     
     return isMobile;
 }
+
+// Clear mobile detection cache on resize
+window.addEventListener('resize', () => {
+    mobileDetectionCache = null;
+});
 
 // Function to add furigana readings to kanji
 function addFurigana(text) {
@@ -422,7 +439,7 @@ async function loadData() {
             const tcgType = pokemon.tcg_type || 'Colorless';
             const tcgTypeInfo = tcgTypesData[tcgType] || tcgTypesData['Colorless'];
             
-            return {
+            const card = {
                 id: pokemon.ndex,
                 kana: pokemon.kanaName,
                 hiragana: pokemon.hiragana || pokemon.kanaName, // Use hiragana field
@@ -436,7 +453,11 @@ async function loadData() {
                 tcgType: tcgType,
                 tcgTypeIcon: tcgTypeInfo?.icon_url || null
             };
+            
+            return card;
         });
+        
+        console.log('Data transformation complete, cards created:', cards.length);
         
         // Build the flashcards
         buildSheets(cards);
@@ -466,7 +487,7 @@ async function loadData() {
             let isNavigating = false; // Flag to prevent scroll events during navigation
             
             // Function to navigate to a specific card
-            function navigateToCard(index) {
+            navigateToCard = function(index) {
                 console.log('navigateToCard called with index:', index);
                 
                 if (index < 0 || index >= cards.length * 2) { // *2 because each card has 2 faces
@@ -523,61 +544,12 @@ async function loadData() {
                     isNavigating = false;
                     console.log('Navigation flag reset');
                 }, 200);
-            }
+            };
             
             // Make navigateToCard globally accessible for pager integration
             window.navigateToCard = navigateToCard;
             
-            // Virtual scrolling with preloading to prevent white flashes
-            let visibleRange = { start: 0, end: 2 }; // Show 3 cards at a time
-            let preloadBuffer = 2; // Preload 2 cards ahead and behind
-            
-            function updateVisibleCards() {
-                const sheets = document.querySelectorAll('.sheet');
-                const viewportCenter = window.pageYOffset + window.innerHeight / 2;
-                
-                // Find which card is currently in the center of viewport
-                let centerCardIndex = 0;
-                for (let i = 0; i < sheets.length; i++) {
-                    const sheet = sheets[i];
-                    const rect = sheet.getBoundingClientRect();
-                    const sheetTop = rect.top + window.pageYOffset;
-                    const sheetBottom = sheetTop + rect.height;
-                    
-                    if (viewportCenter >= sheetTop && viewportCenter <= sheetBottom) {
-                        centerCardIndex = i;
-                        break;
-                    }
-                }
-                
-                // Calculate visible range with preload buffer
-                const start = Math.max(0, centerCardIndex - preloadBuffer);
-                const end = Math.min(sheets.length - 1, centerCardIndex + preloadBuffer);
-                
-                // Only update if the range has changed significantly
-                if (start !== visibleRange.start || end !== visibleRange.end) {
-                    console.log(`Updating visible range from ${visibleRange.start}-${visibleRange.end} to ${start}-${end}`);
-                    
-                    // Hide cards outside the visible range
-                    sheets.forEach((sheet, index) => {
-                        if (index >= start && index <= end) {
-                            sheet.style.display = 'flex';
-                            sheet.style.visibility = 'visible';
-                            sheet.style.opacity = '1';
-                        } else {
-                            // Keep cards in DOM but make them invisible and non-interactive
-                            sheet.style.visibility = 'hidden';
-                            sheet.style.opacity = '0';
-                            sheet.style.pointerEvents = 'none';
-                        }
-                    });
-                    
-                    visibleRange = { start, end };
-                    currentCardIndex = centerCardIndex;
-                }
-            }
-            
-            // Throttled scroll handler for better performance
+            // Simple scroll tracking for mobile - no virtual scrolling
             let scrollTimeout;
             window.addEventListener('scroll', (e) => {
                 // Throttle scroll events to improve performance
@@ -587,7 +559,22 @@ async function loadData() {
                 
                 scrollTimeout = setTimeout(() => {
                     scrollTimeout = null;
-                    updateVisibleCards();
+                    // Simple scroll tracking without hiding cards
+                    const sheets = document.querySelectorAll('.sheet');
+                    const viewportCenter = window.pageYOffset + window.innerHeight / 2;
+                    
+                    // Find which card is currently in the center of viewport
+                    for (let i = 0; i < sheets.length; i++) {
+                        const sheet = sheets[i];
+                        const rect = sheet.getBoundingClientRect();
+                        const sheetTop = rect.top + window.pageYOffset;
+                        const sheetBottom = sheetTop + rect.height;
+                        
+                        if (viewportCenter >= sheetTop && viewportCenter <= sheetBottom) {
+                            currentCardIndex = i;
+                            break;
+                        }
+                    }
                 }, 16); // ~60fps throttling
             });
             
@@ -602,9 +589,9 @@ async function loadData() {
     }
 }
 
-const jpFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='title'>${c.kana}<button class='speak-btn' onclick='speakText("${c.kana}", "ja-JP")' title='Speak'>🔊</button></div><div class='subtitle'>(${c.hiragana})<button class='speak-btn' onclick='speakText("${c.hiragana}", "ja-JP")' title='Speak'>🔊</button></div><div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.kana}'/></div></div><div class='section'>日本語で名前の意味</div><div class='content'>${c.jp.map(t=>`<p>・${t}</p>`).join('')}</div></div>`;
+const jpFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='card-title'><span class='english-name'>${c.english}</span><span class='japanese-name'>${c.pub} (${c.kana})<button class='speak-btn' onclick='speakText("${c.kana}", "ja-JP")' title='Speak'>🔊</button></span></div><div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.kana}'/></div></div><div class='section'>日本語で名前の意味</div><div class='content'>${c.jp.map(t=>`<p>・${t}</p>`).join('')}</div></div>`;
 
-const enFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='title'>${c.pub}</div>${c.hep!==c.pub?`<div class='subtitle'>(${c.hep})</div>`:''}<div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.pub}'/></div></div><div class='section'>Name Origin</div><div class='content'>${c.en.map(t=>`<p>・${t}</p>`).join('')}<p style='margin-top:6px'>${c.desc}</p><p style='margin-top:6px'><strong>English:</strong> ${c.english}</p></div></div>`;
+const enFace = c => `<div class='card' data-tcg-type='${c.tcgType}'><div class='card-header'><div class='type-icon'>${c.tcgTypeIcon ? `<img src='${c.tcgTypeIcon}' alt='${c.tcgType}'/>` : ''}</div></div><div class='card-title'><span class='english-name'>${c.english}</span><span class='japanese-name'>${c.pub} (${c.kana})<button class='speak-btn' onclick='speakText("${c.pub}", "ja-JP")' title='Speak'>🔊</button></span></div><div class='line'></div><div class='image-box'><div class='frame'><img src='${c.img}' alt='${c.english}'/></div></div><div class='section'>Name Origin</div><div class='content'>${c.en.map(t=>`<p>・${t}</p>`).join('')}<p style='margin-top:6px'>${c.desc}</p><p style='margin-top:6px'><strong>English:</strong> ${c.english}</p></div></div>`;
 
 function buildSheets(cards) {
     const container = document.getElementById('sheets');
@@ -612,6 +599,7 @@ function buildSheets(cards) {
     
     // Check if we're on mobile - use more reliable detection
     const isMobile = isMobileDevice();
+    console.log('buildSheets called, isMobile:', isMobile, 'cards.length:', cards.length);
     
     if (isMobile) {
         // On mobile, create a single long scrollable container with all card faces
@@ -628,24 +616,36 @@ function buildSheets(cards) {
         }
         html += "</div>";
         
-        // Initialize virtual scrolling after DOM is ready
-        setTimeout(() => {
-            updateVisibleCards();
-        }, 100);
+        console.log('Mobile layout generated, sections:', cards.length * 2);
+        
+        // No virtual scrolling initialization needed for simple scroll layout
     } else {
-        // On desktop, keep the original 4-card layout
+        // On desktop, use CSS Grid for responsive layout
         for (let i = 0; i < cards.length; i += 4) {
             const group = cards.slice(i, i + 4);
             html += "<section class='sheet'>";
             group.forEach((c, idx) => {
                 html += jpFace(c) + enFace(c);
-                if (idx % 2 === 0 && idx + 1 < group.length) html += "<div class='spacer'></div>";
             });
             html += "</section>";
         }
+        
+        console.log('Desktop layout generated, pages:', Math.ceil(cards.length / 4));
     }
     
     container.innerHTML = html;
+    console.log('HTML set to container, container children:', container.children.length);
+    
+    // Simple verification that layout is working
+    setTimeout(() => {
+        const sheets = document.querySelectorAll('.sheet');
+        const cards = document.querySelectorAll('.card');
+        console.log('Layout verification - Sheets:', sheets.length, 'Cards:', cards.length);
+        
+        if (isMobile && sheets.length > 0) {
+            console.log('Mobile layout: All sheets should be visible and scrollable');
+        }
+    }, 100);
 }
 
 function buildPager() {
